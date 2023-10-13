@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+body{
+  background-color: white;
+  font-family: 'Roboto';
+
+  display: flex;
+  justify-content: center;
+}
+.App{
+  max-width: 375px;
+  min-height: 100vh;
+}
+header{
+  margin-block-end: 2rem;
+}
+
+h1{
+  font-weight: 600;
+}
+
+p, h1, button, input{
+  padding: 1rem;
+}
+p{
+  color: hsl(235, 18%, 26%);
+}
+
+li{
+  list-style-type: none;
+  margin-left: 1rem;
+  display: flex;
+}
+form{
+  margin-inline: 1rem;  
+}
+label{
+  font-size: .75rem;
+  font-weight: 600;
+}
+input, button{
+  font-family: inherit;
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  margin-inline: auto;
+  margin-block-start: 0.5rem;
+}
+input{
+  border: 1px solid hsl(231, 7%, 60%) ; 
+}
+button{
+  background-color: hsl(234, 29%, 20%);
+  color: white;
+  border: none;
+  margin-block: 1rem;
+}
+.wrong-format{
+  color: hsl(4, 100%, 67%);
+  font-size: .75rem;
+  font-weight: 600;
+  padding: 0;
+  float: right;
+}
+.email-valid{
+  background-color: hsl(4, 63%, 90%);
+  color: hsl(4, 100%, 67%);
+  border: 1px solid hsl(4, 100%, 67%);
+  outline: none;
+}
+
+
+.main__success{
+  min-height: 100vh;
+  margin-inline: 1rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.main__success img{
+  margin-inline-start: 1rem;
+  margin-block: 1rem;
+}
+.main__success p{
+  margin-block-end: 5rem;
+}
+.main__success button{
+  margin-block-start: 5rem;
+  color: hsl(240, 12%, 93%);
+  font-weight: 500;
+}
+
+
+@media screen and (min-width: 1024px) {
+  body{
+    background-color: hsl(235, 18%, 26%);
+  }
+  .App{
+    max-width: 1000px;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .home{
+    background-color: white;
+    padding: 1rem;
+    border-radius: 20px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  header {
+    grid-column: 2/3;
+  }
+  .illustration-container{
+    text-align: right;
+  }
+  main{
+    padding-inline: 1.5rem;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  main h1{
+    font-size: 3rem;
+  }
+  main ul{
+    margin-block-end: 2rem;
+  }
+}
