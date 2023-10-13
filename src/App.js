@@ -1,4 +1,4 @@
-import { Route, Routes, useNavigate } from 'react-router-dom';
+import { Route, Routes, useNavigate, HashRouter} from 'react-router-dom';
 import { useState } from "react";
 import Layout from "./Layout";
 import Success from './Success';
